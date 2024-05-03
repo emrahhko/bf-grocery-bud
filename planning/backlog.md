@@ -2,12 +2,16 @@
 
 ## Must-Haves
 
-> these are necessary for basic usability
+> An input form so the users can add task on his list. Edit and delete buttons
+> so the user can remove or edit task on the list.
 
 ## Should-Haves
 
-> these will complete the user experience, but are not necessary
+> Task organization, so the users can organize his task efficiently. Priority,
+> users should be able to prioritize tasks, this could be done through a star
+> system. Completion, users should be able to mark tasks as complete when
+> they're done.
 
 ## Could-Haves
 
-> would be really cool ... if there's time
+> Embedded calendars and timers.

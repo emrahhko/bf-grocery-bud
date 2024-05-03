@@ -10,7 +10,8 @@ export const addItemHandler = (e) => {
 
     if (btnType === 'Submit') {
         if (!value) {
-            dom.error.innerText = 'Enter something to your "to-do" list';
+            dom.error.innerText = 'Please add something to your "To-Do" list';
+            dom.error.classList.add('error1');
         } else {
             dom.error.innerText = '';
             const newItem = {
@@ -29,6 +30,7 @@ export const addItemHandler = (e) => {
         const id = Number(selectedItem.id);
         const itemData = data.items.find((item) => item.id === id);
         itemData.text = value;
+        dom.input.value = '';
         dom.submitBtn.innerText = 'Submit';
         selectedItem.classList.remove('selected');
     }

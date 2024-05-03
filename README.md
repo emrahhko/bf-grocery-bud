@@ -4,14 +4,17 @@
 
 ## Table of contents
 
-- [General info](#general-info)
-- [Screenshots](#screenshots)
-- [Technologies](#technologies)
-- [Setup](#setup)
-- [Features](#features)
-- [Status](#status)
-- [Inspiration](#inspiration)
-- [Contact](#contact)
+- [Image gallery](#image-gallery)
+  - [Table of contents](#table-of-contents)
+  - [General info](#general-info)
+  - [Screenshots](#screenshots)
+  - [Technologies](#technologies)
+  - [Setup](#setup)
+  - [Code Examples](#code-examples)
+  - [Features](#features)
+  - [Status](#status)
+  - [Inspiration](#inspiration)
+  - [Contact](#contact)
 
 ## General info
 
@@ -20,7 +23,7 @@
 
 ## Screenshots
 
-![Example screenshot]()
+![screenshot](./assets/to-do-screenshot.png)
 
 ## Technologies
 
@@ -36,7 +39,12 @@ clone the repo and start using the stop watch.
 ## Code Examples
 
 ```js
-
+editBtn.addEventListener('click', () => {
+	dom.submitBtn.innerText = 'Edit';
+	dom.input.value = item.text;
+	document.getElementById(item.id).classList.add('selected');
+	editBtnHandler(item);
+});
 ```
 
 ## Features
@@ -59,3 +67,5 @@ Project is: _in progress_
 ## Inspiration
 
 ## Contact
+
+- [Emrah](https://github.com/emrahhko)

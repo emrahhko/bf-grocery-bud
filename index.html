@@ -4,27 +4,49 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
-        <title>Todo list</title>
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+            integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="icon" href="./assets/to-do-list.png" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&family=Autour+One&family=Cinzel&family=Cute+Font&family=Jersey+25&family=Jersey+25+Charted&family=Lato:wght@300&family=Montserrat&family=Noto+Sans+Display:wght@300&family=Open+Sans:wght@300&family=Orbitron&family=Oswald:wght@500&family=PT+Sans+Caption&family=Poetsen+One&family=Poppins:ital,wght@1,600&family=Protest+Revolution&family=Rajdhani:wght@500&family=Raleway:wght@200&family=Roboto&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Sixtyfour&family=Source+Code+Pro:wght@300&family=Titillium+Web&family=Ubuntu+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <title>To-Do list</title>
     </head>
     <body>
         <section class="section-center">
             <form class="todos-form">
-                <p class="alert"></p>
-                <h3>Todo list</h3>
+                <h3>
+                    <img
+                        class="icon"
+                        src="./assets/to-do-list-main.png"
+                        alt="icon"
+                    />
+                </h3>
                 <div class="form-control">
                     <input
                         type="text"
                         id="todo-input"
-                        placeholder="e.g. go to doctor"
+                        placeholder='Update your "To-Do" list here...'
                     />
-                    <button type="submit" class="submit-btn"></button>
+                    <button type="submit" class="submit-btn">Submit</button>
                 </div>
                 <div class="error"></div>
             </form>
             <div class="todos-container">
                 <div class="todos-list"></div>
-                <button class="clear-btn"></button>
+                <button class="clear-btn">Clear All</button>
             </div>
         </section>
         <script type="module" src="./src/init.js"></script>
