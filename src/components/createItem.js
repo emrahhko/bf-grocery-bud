@@ -16,7 +16,7 @@ export const createItem = (item) => {
     btnContainer.classList.add('btn-container');
 
     const editBtn = document.createElement('button');
-    editBtn.innerHTML = '<i class="fas fa-edit"></i>';
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
     editBtn.classList.add('edit-btn');
 
     editBtn.addEventListener('click', () => {
@@ -27,7 +27,7 @@ export const createItem = (item) => {
     });
 
     const deleteBtn = document.createElement('button');
-    editBtn.innerHTML = '<i class="fas fa-trash"></i>';
+    deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteBtn.classList.add('delete-btn');
 
     deleteBtn.addEventListener('click', () => {
