@@ -1,4 +1,3 @@
-/* eslint-disable linebreak-style */
 import { data } from '../data.js';
 import { dom } from '../dom.js';
 import { createItem } from '../components/createItem.js';
@@ -27,6 +26,7 @@ export const addItemHandler = (e) => {
     } else {
         const selectedItem = document.querySelector('.selected');
         selectedItem.querySelector('.title').innerText = value;
+        // selectedItem.querySelector('.delete-btn').disabled = true;
         const id = Number(selectedItem.id);
         const itemData = data.items.find((item) => item.id === id);
         itemData.text = value;
