@@ -1,4 +1,12 @@
 /* eslint-disable linebreak-style */
+
+/**
+ * Create a new To-Do item.
+ *
+ * @param {object} item - The To-Do item oject containing data.
+ * @returns {HTMLElement} The DOM item element.
+ */
+
 import { dom } from '../dom.js';
 import { editBtnHandler } from '../handlers/editBtnHandler.js';
 import { deleteBtnHandler } from '../handlers/deleteBtnHandler.js';
